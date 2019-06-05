@@ -68,7 +68,7 @@
                 }
                 var date = new Date();
                 var data = date.getFullYear()+"-"+formatDate(date.getMonth()+1)+"-"+formatDate(date.getDate())+" "+formatDate(date.getHours())+":"+formatDate(date.getMinutes())+":"+formatDate(date.getSeconds());
-                $("#ideias").prepend('<div class="post col-12 col-sm-6 col-md-4"><input type="text" name="titulo[]" class="titulo" placeholder="Insira um título" value=""><textarea name="corpo[]" class="corpo" placeholder="Insira uma idéia"></textarea><input type="hidden" name="data[]" value="'+data+'"></div>');
+                $("#ideias").prepend('<div class="post col-12 col-sm-6 col-md-4"><a href="#" onclick="removeIdeia(this)" class="fechar">x</a><input type="text" name="titulo[]" class="titulo" placeholder="Insira um título" value=""><textarea name="corpo[]" class="corpo" placeholder="Insira uma idéia"></textarea><input type="hidden" name="data[]" value="'+data+'"></div>');
 
                 //atualiza acompanhamento do jquery em novos elementos da pagina
                 $('input').change(function() {
