@@ -34,7 +34,7 @@
                     <br><br>
                 </div>
                 <div class="col-12 col-lg-8">
-                    <form id="form-posts" method="post" action="update">
+                    <form id="form-posts" method="post" action="update.php">
                         <div class="row" id="ideias">
                             <?php
                                 //verifica se tem ideias, se tiver faz um loop colocand o post-it de cada uma
